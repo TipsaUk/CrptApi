@@ -33,7 +33,7 @@ public class CrptApi {
         this.requestsCount = 0;
         this.lastRequestTime = Instant.now();
 
-        // предполагаем что url запроса зависит от вида документа
+        // предполагаем, что url запроса зависит от вида документа
         apiUrlMap.put(DocumentGoodsDto.class, "https://ismp.crpt.ru/api/v3/lk/documents/create");
         startRequestProcessor();
     }
